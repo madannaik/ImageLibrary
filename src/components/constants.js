@@ -11,10 +11,11 @@ export const maindiv = {
       display: 'flex',
       flexDirection: 'column',
 
+
     };
 export const image = {
       width: '50vw',
-      height: '50vh',
+      height: '30vh',
     };
 
 export const imageDiv = {
@@ -29,12 +30,7 @@ export const footerDiv = {
   width:"100vw",
   height:"30vh",
   margin:"0px ",
-  padding: "0px",
-  backgroundColor:"#0f3460",
-  bottom:'0',
-
+  display:"flex",
+  flexWrap:"wrap",
+  flexDirection:"row",
 };
-export const footer = {
-
-
-}

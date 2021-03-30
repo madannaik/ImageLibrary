@@ -5,7 +5,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import {Avatar} from '@material-ui/core';
-import { createMuiTheme } from '@material-ui/core/styles';
+import {Link} from "react-router-dom";
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -29,12 +30,13 @@ export default function ButtonAppBar() {
 
                 <Toolbar>
                     <Avatar  className={classes.large} src={"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/NASA_Wormball_logo.svg/1024px-NASA_Wormball_logo.svg.png"} style={{objectFit:'fit'}}/> >
-                    {/*    <img src="http://www.simpleimageresizer.com/_uploads/photos/357d9c28/nasa_1_150x100.jpg"  alt={"logo"}/>*/}
-                    {/*</Avatar>*/}
-                    <Typography variant="h5" style={{fontFamily:'cursive',alignContent:"center"}}  className={classes.title}>
-                        Nasa Image Gallery
-                    </Typography>
-                    <Button  variant="outlined" size="small" color={'inherit'} className={classes.margin}>Image Gallery</Button>
+                        <Typography  style={{fontFamily:'cursive',alignContent:"center",fontSize:"1.2rem"}}  className={classes.title}>
+                          <Link style={{color:"white",textDecoration:'none'}} to="/">Nasa Image Gallery</Link>
+                        </Typography>
+                    <Link style={{color:'white',textDecoration:'none'}}  to="/search"   >
+                        <Button  variant="outlined" size="small" style={{fontSize:"0.5rem"}} color={'inherit'} className={classes.margin}>Search Gallery</Button>
+                    </Link>
+
                 </Toolbar>
             </AppBar>
         </div>

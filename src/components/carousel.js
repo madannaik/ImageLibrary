@@ -1,7 +1,7 @@
 import {Carousel} from "react-bootstrap";
 import {useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import  '../index.css';
 
 function ControlledCarousel({jsonData}) {
     const [index, setIndex] = useState(0);
@@ -12,10 +12,10 @@ function ControlledCarousel({jsonData}) {
 
     return (
 
-        <Carousel activeIndex={index} onSelect={handleSelect}  className="w-75 h-100 m-4 border-light border p-3" fade >
+        <Carousel activeIndex={index} onSelect={handleSelect}  className=" w-75 m-4 border-light border p-3 " fade >
             {jsonData.map(data => {
                 if (data.url.endsWith('.jpg')|| data.url.endsWith('.png')){
-                return <Carousel.Item>
+                return <Carousel.Item bsPrefix="carousel-item" >
                     <img
                         className="d-block w-100"
                         src={data.hdurl}

@@ -12,11 +12,11 @@ function ImageOfTheDay() {
   useEffect(() => {
         let lastWeekDate = new Date(new Date().setDate(new Date().getDate() - 7));
         let date = new Date();
-        let dateString = date.getFullYear() + '-' + date.getMonth() + '-' +
+        let dateString = date.getFullYear() + '-' + `${date.getMonth()+1}` + '-' +
             date.getDate();
         let lastDateString = lastWeekDate.getFullYear() + '-' +
-            lastWeekDate.getMonth() + '-' + lastWeekDate.getDate();
-        console.log(dateString, lastDateString);
+            `${lastWeekDate.getMonth()+1}` + '-' + lastWeekDate.getDate();
+        console.log(dateString, lastDateString,date);
         const apiKey = 'L6PqsNMcfp5DpkMXvA80baHOv9ZWcs0vrQ3wpLYW';
         const requestOptions = {
           method: 'GET',
