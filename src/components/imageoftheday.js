@@ -16,7 +16,7 @@ function ImageOfTheDay() {
             date.getDate();
         let lastDateString = lastWeekDate.getFullYear() + '-' +
             `${lastWeekDate.getMonth()+1}` + '-' + lastWeekDate.getDate();
-        console.log(dateString, lastDateString,date);
+        
         const apiKey = 'L6PqsNMcfp5DpkMXvA80baHOv9ZWcs0vrQ3wpLYW';
         const requestOptions = {
           method: 'GET',
@@ -31,7 +31,6 @@ function ImageOfTheDay() {
             requestOptions).then(response => response.json()).then(data => {
 
           setJsonData(data);
-          console.log(data);
           setItem(true);
 
         });
