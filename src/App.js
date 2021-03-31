@@ -1,7 +1,7 @@
 import ImageOfTheDay from './components/imageoftheday';
 import ButtonAppBar from './components/Appbar';
 import {AppCSS} from './components/constants';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {HashRouter as Router, Route, Switch} from 'react-router-dom';
 import Search from './components/search';
 
 function App() {
