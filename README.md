@@ -5,5 +5,5 @@ Image Library
 ---
 
 
-- Shows Image of the week from NASA API [CLICK HERE FOR API INFORMATION](https://api.nasa.gov/)
-- 
+- Shows Image of the week from NASA IMAGE API [Click here for more infromation on api](https://api.nasa.gov/)
+- User can search for images in the NASA image using " search imag " tab in this website.
