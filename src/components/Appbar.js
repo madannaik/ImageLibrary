@@ -30,7 +30,7 @@ export default function ButtonAppBar() {
 
                 <Toolbar>
                     <Avatar  className={classes.large} src={"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/NASA_Wormball_logo.svg/1024px-NASA_Wormball_logo.svg.png"} style={{objectFit:'fit'}}/> >
-                        <Typography  style={{fontFamily:'cursive',alignContent:"center",fontSize:"1.2rem"}}  className={classes.title}>
+                        <Typography  style={{fontFamily:'sans-serif',alignContent:"center",fontSize:"1.2rem"}}  className={classes.title}>
                           <Link style={{color:"white",textDecoration:'none'}} to="/">Nasa Image Gallery</Link>
                         </Typography>
                     <Link style={{color:'white',textDecoration:'none'}}  to="/search"   >

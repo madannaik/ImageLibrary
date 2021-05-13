@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return <div className={footerDiv} style={{
     backgroundColor: '#f2e9e4',
-    padding: '10vh 20vw 10vh 10vw',
+    padding: '5vh 20vw 5vh 10vw',
     color:"black",
 
     margin: "0px ",
