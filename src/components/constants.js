@@ -6,7 +6,7 @@ export const AppCSS = {
 export const maindiv = {
 
       color: 'white',
-      backgroundColor: '#16213e',
+      backgroundColor: '#4a4e69',
       // paddingBottom: '10px',
       display: 'flex',
       flexDirection: 'column',
@@ -34,3 +34,4 @@ export const footerDiv = {
   flexWrap:"wrap",
   flexDirection:"row",
 };
+// 16213e

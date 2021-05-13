@@ -13,7 +13,7 @@ function Search() {
   const [request, setRequest] = useState(false);
   const [loading, setLoading] = useState(false);
   const [queryData, setQueryData] = useState([]);
-  // const [isError, setisError] = useState(false);
+  const [isError, setisError] = useState(false);
   // const [isData, setIsData] = useState(false);
 
 
@@ -32,20 +32,25 @@ function Search() {
   };
   const fetch = async () =>{
     setLoading(true);
-    const response = await axios({
+      await axios({
       url: `https://images-api.nasa.gov/search?q=${input}`,
       method: 'get'
-    });
-    if (response.data.length === 0) { setRequest(false); setLoading(false); }
-        else {
-          setQueryData([]);
-          setQueryData(response.data.collection.items);
-          console.log(response.data.collection);
-        }
+    }).then(response=>{
+      if (response.data.length === 0) { setRequest(false); setLoading(false); }
+      else {
+        setQueryData([]);
+        setQueryData(response.data.collection.items);
+        // console.log(response.data.collection);
+      }
 
-        setLoading(false);
-        setRequest(true);
-  }
+      setLoading(false);
+      setRequest(true);
+      }).then(err =>{
+        setisError(true);
+        console.log(err);
+      }) 
+    };
+    
   
   return <div >
 

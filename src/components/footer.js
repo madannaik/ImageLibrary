@@ -12,9 +12,9 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return <div className={footerDiv} style={{
-    backgroundColor: '#0f3460',
+    backgroundColor: '#f2e9e4',
     padding: '10vh 20vw 10vh 10vw',
-
+    color:"black",
 
     margin: "0px ",
     display: "flex",
@@ -48,17 +48,17 @@ function Footer() {
         to={{ pathname: "https://github.com/madannaik" }}
         target='_blank'
         aria-label='Github'
-      ><GitHub style={{color:"white"}}/></Link>
+      ><GitHub style={{color:"black"}}/></Link>
       <Link
         to={{ pathname: "https://www.facebook.com/madan.naik.7545/" }}
         target='_blank'
         aria-label='facebook'
-      ><Facebook style={{color:"white"}}/></Link>
+      ><Facebook style={{color:"black"}}/></Link>
       <Link
         to={{ pathname: "https://www.linkedin.com/in/madan-naik-388953177" }}
         target='_blank'
         aria-label='LinkedIn'
-      ><LinkedIn style={{color:"white"}}/></Link>
+      ><LinkedIn style={{color:"black"}}/></Link>
       
       
     </div>
@@ -66,3 +66,6 @@ function Footer() {
 }
 
 export default Footer;
+
+
+// 0f3460
