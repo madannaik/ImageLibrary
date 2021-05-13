@@ -13,7 +13,7 @@ function Search() {
   const [request, setRequest] = useState(false);
   const [loading, setLoading] = useState(false);
   const [queryData, setQueryData] = useState([]);
-  const [isError, setisError] = useState(false);
+  // const [isError, setisError] = useState(false);
   // const [isData, setIsData] = useState(false);
 
 
@@ -46,7 +46,7 @@ function Search() {
       setLoading(false);
       setRequest(true);
       }).then(err =>{
-        setisError(true);
+        
         console.log(err);
       }) 
     };
